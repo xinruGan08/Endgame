@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  font-family: "Hanken Grotesk", Arial, sans-serif;
+  background-color: #262626;
+  color: #D9D9D9;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+  margin: 0px;
+}
+
+h1{
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color:#F9F4DA;
+  margin: 10px;
+}
+
+h2{
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #8E8E8E;
+}
+
+.status{
+  height: 59px;
+  width: 350px;
+  background-color: #7A5EA7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.status > h1{
+  margin: 0;
+}
+
+.status > h2{
+  color: white;
+}
+
+.language-list{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0px;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  flex-wrap: wrap;
+  font-family: Hanken Grotesk;
+  font-size: 12px;
+  font-weight: 700;
+  height: 55px;
+  gap:2px
+}
+
+.word-list{
+  display: flex;
+  flex-direction: row;
+  gap:5px;
+  margin: 10px;
+}
+
+.word{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #F9F4DA ;
+  background-color: #323232;
+  border-bottom: 1px solid #F9F4DA;
+  font-family: "Hanken Grotesk","Arial";
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.user-input{
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+  gap:5px;
+  justify-content: center;
+  align-items: center;
+  width: 480px;
+  margin: 10px;
+}
+
+button:nth-child(11) {
+  margin-left:30px; /* Optional: Add space before "Z" */
+}
+button:nth-child(19) {
+  margin-right:28px; /* Optional: Add space before "Z" */
+}
+
+.reset-button{
+  margin: 10px;
+  width: 228px;
+  height: 40px;
+  padding: 6px 12px ;
+  gap: 6px;
+  border-radius: 4px ;
+  border: 1px;
+  opacity: 0px;
+  background-color: #11B5E5;
+  border: 1px solid #D7D7D7;
+  cursor: pointer;
+}
