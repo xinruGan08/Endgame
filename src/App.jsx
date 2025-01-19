@@ -75,6 +75,22 @@ export default function App(){
         isGameOver={isGameOver}
         />)
 
+        useEffect(() => {
+            function handleKeyDown(event) {
+                const pressedKey = event.key.toUpperCase();
+    
+                if (alphabet.includes(pressedKey) && !isGameOver) {
+                    guessing(pressedKey);
+                }
+            }
+    
+            window.addEventListener("keydown", handleKeyDown);
+    
+            return () => {
+                window.removeEventListener("keydown", handleKeyDown);
+            };
+        }, [alphabet, isGameOver]); 
+
     return (
         <main>
             <Header/>
@@ -102,7 +118,7 @@ export default function App(){
                 <p>Current word: {currentWord.split("").map(letter => 
                 userGuess.includes(letter) ? letter + "." : "blank.")
                 .join(" ")}</p>
-            
+                
             </section>
 
             <div className="user-input">
